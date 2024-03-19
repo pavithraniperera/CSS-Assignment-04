@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question-02</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.5.1-web/css/all.min.css">
+    <style>
+         section{
+             position: relative;
+             width: 100vw;
+             height: 100vh;
+             background-color: rebeccapurple;
+         }
+         div{
+             position: absolute;
+             width: 300px;
+             height: 300px;
+             border-radius: 300px;
+             background-color: gray;
+             top: 0;
+             right: 0;
+             bottom: 0;
+             left: 0;
+             margin: auto;
+         }
+         div>h2{
+             position: absolute;
+             width: fit-content;
+             height: fit-content;
+             color: white;
+             font-size: 40px;
+             top: 0;
+             right: 0;
+             bottom: 0;
+             left: 0;
+             margin: auto;
+         }
+         section>div::before{
+             content: "";
+             border: 10px solid white;
+             border-top-color: #ff253a;
+             border-radius: 100%;
+             position: absolute;
+             top: 0;
+             right: 0;
+             left: 0;
+             bottom: 0;
+             margin: auto;
+         }
+         section>div:hover:before{
+             transform: rotate(360deg);
+             transition-duration: 3s;
+         }
+    </style>
+</head>
+<body>
+<section>
+    <div>
+        <h2>RWAD</h2>
+    </div>
+</section>
+
+</body>
+</html>
