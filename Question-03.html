@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question-03</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+    <style>
+        :root{
+            --width: 200px;
+            --height: 100px;
+        }
+       div{
+
+           width:var(--width) ;
+           height: var(--height);
+           background-color: plum;
+           border-radius: 30px;
+           animation: my_animation;
+           animation-duration: 5s;
+           animation-iteration-count: infinite;
+           animation-direction: alternate;
+           animation-timing-function: linear;
+       }
+       @keyframes my_animation {
+           0%{
+             margin-left: 0;
+               margin-top: 0;
+               transform: rotate(0deg);
+           }
+           25%{
+               background-color: hotpink;
+               margin-top: 0;
+               margin-left: calc(100vw - var(--width));
+               transform: rotate(180deg);
+
+           }
+           50%{
+               background-color: red;
+               margin-top:calc(100vh - var(--height));
+               margin-left: calc(100vw - var(--width));;
+               transform: rotate(0deg);
+           }
+           75%{
+               background-color: gray;
+               margin-top:calc(100vh - var(--height));
+               margin-left: 0;
+               transform: rotate(-180deg);
+           }
+       }
+    </style>
+</head>
+<body>
+  <div>
+
+  </div>
+</body>
+</html>
