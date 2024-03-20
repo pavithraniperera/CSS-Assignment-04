@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question-06</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+    <style>
+        main{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-image: url("assets/images/sky.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            overflow-x: hidden;
+
+        }
+        div:first-child{
+            position: absolute;
+            width: 200vw;
+            height: 35vh;
+            background-image: url("assets/images/road.jpg");
+            background-size: cover;
+            background-repeat: repeat-x;
+            background-position: center;
+            bottom: 0;
+            animation: animation_road 8s linear infinite;
+
+        }
+        div:nth-child(2){
+            position: absolute;
+            width: 160vw;
+            height: 25vh;
+            background-image: url("assets/images/city.png");
+            background-size: cover;
+            background-repeat: repeat-x;
+            background-position: center;
+            bottom: 35vh;
+            animation: animation_city 8s linear infinite ;
+        }
+        div:nth-child(3){
+            position: absolute;
+            width: 20vw;
+            height: 15vh;
+            background-image: url("assets/images/car.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            bottom:25vh;
+            right: 0;
+            left: 0;
+            margin: auto;
+
+        }
+        div:nth-child(3)>div{
+            position: absolute;
+            width: 4vw;
+            height: 8vh;
+            background-image: url("assets/images/wheel.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            animation:animation_wheel 8s infinite ;
+          /*  animation-timing-function: linear;*/
+
+
+        }
+        div:nth-child(3)>div:nth-child(1){
+            left: 1.5vw;
+            top: 4vw;
+        }
+        div:nth-child(3)>div:nth-child(2){
+            left: 14vw;
+            top: 4vw;
+        }
+
+        @keyframes animation_wheel {
+            from{
+                transform: rotate(0deg);
+                transition-duration: 8s;
+            }
+            to{
+                transform: rotate(360deg);
+                transition-duration: 8s;
+            }
+        }
+        @keyframes animation_road {
+        100%{
+            transform: translateX(-100vw);
+        }
+
+        }
+        @keyframes animation_city {
+            100%{
+                transform: translateX(-60vw);
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+  <main>
+      <div>
+
+      </div>
+      <div>
+
+      </div>
+      <div>
+          <div>
+
+          </div>
+          <div>
+
+          </div>
+
+      </div>
+  </main>
+</body>
+</html>
